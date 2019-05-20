@@ -7,14 +7,14 @@ import javax.inject.Inject;
 
 import uz.alm.di.auth.AuthComponent;
 import uz.alm.di.auth.DaggerAuthComponent;
-import uz.alm.domain.AuthInterator;
+import uz.alm.domain.AuthInteractor;
 import uz.alm.ui.login.auth.view.AuthView;
 
 @InjectViewState
 public class AuthPresenter extends MvpPresenter<AuthView> {
 
     @Inject
-    AuthInterator interactor;
+    AuthInteractor interactor;
 
     public AuthPresenter() {
 
