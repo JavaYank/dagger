@@ -20,7 +20,7 @@ public class AuthPresenter extends MvpPresenter<AuthView> {
 
     }
 
-    public boolean sayHello(String login, String pass) {
+    public boolean auth(String login, String pass) {
         return interactor.auth(login, pass);
     }
 }
